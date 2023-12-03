@@ -1,0 +1,69 @@
+.newTaskForm {
+    position: absolute; 
+    width: 100%;
+    max-width: 44rem;
+    gap: 0.5rem;
+    left: 0; 
+    right: 0;
+    top: 7.8175rem;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;    
+    display: flex;
+    
+}
+
+
+.newTaskForm input {
+    width: 100%;
+    flex: 1;
+    color: var(--gray-100);
+    background: var(--gray-500);
+    border: 1px solid var(--Gray-700);
+    border-radius: 0.5rem;
+    padding: 0 1rem;
+    font-size: 1rem
+ }
+ 
+ .newTaskForm input ::placeholder {
+     color: var(--gray-300);
+ }
+ 
+ .newTaskForm input, .newTaskForm button {
+     height: 3.375rem;
+ }
+ 
+ .newTaskForm button {
+     border-radius: 0.5rem;
+     background: var(--blue-dark);
+     display: flex;
+     padding: 1rem;
+     justify-content: center;
+     align-items: center;
+     gap: 0.5rem;
+     color: var(--gray-100);
+     border: none;
+     font-size: 0.875rem;
+ }
+ 
+ 
+ .newTaskForm button:hover:not(:disabled)hover {
+     background: var(--blue);
+ }
+ 
+ .newTaskForm button:disabled {
+     opacity: 0.8;
+ }
+
+
+
+ @media (max-width: 30rem) {
+    .newTaskForm {
+        max-width: 95%;
+    
+        align-items: center;
+        text-align: center;
+      }
+ }
+
